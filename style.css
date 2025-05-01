@@ -1,0 +1,260 @@
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 14px;
+}
+
+.container {
+  background: #f0f8ff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 800px;
+  border: 2px solid #000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.input-with-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  flex: 1;
+}
+
+.input-with-label label {
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.input-with-label input,
+.input-with-label textarea,
+.input-with-label select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.input-with-label input,
+.input-with-label textarea {
+  font-size: 14px;
+  resize: none;
+}
+
+.input-with-label input:focus,
+.input-with-label textarea:focus {
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="file"],
+textarea {
+  flex: 1;
+  border: 1px solid #000;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.readonly-label {
+  flex: 1;
+  padding: 12px;
+  background-color: #d0f0d0;
+  border: 1px solid #90caf9;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+}
+
+.checkboxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 20px;
+}
+
+.checkboxes label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+#previewImage {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#screenshotWrapper {
+  padding: 40px;
+  background-color: transparent;
+}
+
+.row-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.row-group > div {
+  flex: 1;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-label {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.custom-file-label:hover {
+  background-color: #218838;
+}
+
+.file-upload-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+#customerImage {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+#imagePreviewWrapper {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+#imagePreview {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.image-upload-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+textarea#customerComment {
+  resize: vertical;
+  min-height: 100px;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#statusBar {
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: bold;
+  display: block;
+}
+
+.status-success {
+  color: green;
+}
+
+.status-error {
+  color: red;
+}
+
+#submitBtn:disabled {
+  display: none;
+}
+
+#customerImage:focus {
+  border-color: #0056b3;
+}
+
+.input-with-label input,
+.input-with-label textarea {
+  font-size: clamp(10px, 1.4vw, 14px);
+}
+.header-bar {
+  background-color: #28a745;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 2px solid #1e7e34;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 10px;
+}
+
+.logo {
+  height: 50px;
+  object-fit: contain;
+}

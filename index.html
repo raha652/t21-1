@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>فرم ترابلشوت</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body>
+</div>
+
+<div class="container">
+<div class="header-bar">
+  <img src="logo.png" alt="لوگو" class="logo">
+</div>
+  <form id="infoForm">
+
+    <div class="row">
+      <div class="readonly-label">فورم گزارش دهی مشترکین/حل مشکل</div>
+      <div class="input-with-label">
+        <label for="date">تاریخ:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+    </div>
+
+    <div class="row"><div class="readonly-label">مشخصات</div></div>
+
+    <div class="row">
+      <div class="input-with-label"><label for="customerName">اسم مشتری:</label><input type="text" id="customerName" name="customerName" required></div>
+      <div class="input-with-label"><label for="customerId">آی‌دی:</label><input type="text" id="customerId" name="customerId" required></div>
+      <div class="input-with-label"><label for="time">زمان:</label><input type="time" id="time" name="time" required></div>
+    </div>
+
+    <div class="row">
+      <div class="input-with-label"><label for="address">آدرس مشتری:</label><input type="text" id="address" name="address" required></div>
+      <div class="input-with-label"><label for="buildingHeight">ارتفاع ساختمان:</label><input type="text" id="buildingHeight" name="buildingHeight" required></div>
+      <div class="input-with-label"><label for="standHeight">ارتفاع استند یا چوب:</label><input type="text" id="standHeight" name="standHeight" required></div>
+    </div>
+
+    <div class="row">
+      <div class="input-with-label"><label for="coordinates">مختصات:</label><input type="text" id="coordinates" name="coordinates" required></div>
+      <div class="input-with-label"><label for="phone">شماره موبایل:</label><input type="text" id="phone" name="phone" required></div>
+    </div>
+
+   <div class="row row-group">
+      <div class="input-with-label image-upload-wrapper">
+        <label for="customerImage">انتخاب عکس:</label>
+        <input type="file" id="customerImage" name="photo" accept="image/*" required>
+        <label for="customerImage" class="custom-file-label">انتخاب عکس</label>
+        <img id="imagePreview" style="display:none; border-radius:8px; width: 100px; height: 100px; object-fit: contain; margin-right: 10px;">
+      </div>
+      <div class="input-with-label">
+        <label for="customerOpinion">نظر مشتری:</label>
+        <textarea id="customerOpinion" name="customerOpinion" required></textarea>
+      </div>
+    </div>
+
+    <div class="row"><div class="readonly-label">توضیحات تخنیکی</div></div>
+
+    <div class="row">
+      <div class="input-with-label"><label for="problem">مشکل مشتری:</label><input type="text" id="problem" name="problem" required></div>
+    </div>
+
+    <div class="row">
+      <div class="input-with-label"><label for="activityDone">فعالیت انجام داده شده:</label><input type="text" id="activityDone" name="activityDone" required></div>
+    </div>
+
+    <div class="row">
+      <div class="input-with-label"><label for="deviceType">نوع دستگاه:</label><input type="text" id="deviceType" name="deviceType" required></div>
+      <div class="input-with-label"><label for="routerType">نوعیت روتر:</label><input type="text" id="routerType" name="routerType" required></div>
+      <div class="input-with-label"><label for="password">پسورد:</label><input type="text" id="password" name="password" required></div>
+    </div>
+
+    <div class="row"><div class="readonly-label">خدمات پشتیبانی</div></div>
+
+    <div class="row">
+      <div class="input-with-label"><label for="base">بیس:</label><input type="text" id="base" name="base" required></div>
+      <div class="input-with-label"><label for="quality">کیفیت:</label><input type="text" id="quality" name="quality" required></div>
+      <div class="input-with-label"><label for="db">دی بی:</label><input type="text" id="db" name="db" required></div>
+      <div class="input-with-label"><label for="cable">کیبل:</label><input type="text" id="cable" name="cable" required></div>
+      <div class="input-with-label"><label for="adapter">آداپتور:</label><input type="text" id="adapter" name="adapter" required></div>
+    </div>
+
+    <div class="row checkboxes">
+      <label><input type="checkbox" name="checklist" value="کیبل چک شد"> کیبل چک شد</label>
+      <label><input type="checkbox" name="checklist" value="روتر چک شد"> روتر چک شد</label>
+      <label><input type="checkbox" name="checklist" value="جهت دستگاه گیرنده چک شد"> جهت دستگاه گیرنده چک شد</label>
+      <label><input type="checkbox" name="checklist" value="کانکتور کیبل چک شد"> کانکتور کیبل چک شد</label>
+      <label><input type="checkbox" name="checklist" value="ه"> ه</label>
+      <label><input type="checkbox" name="checklist" value="و"> و</label>
+      <label><input type="checkbox" name="checklist" value="ز"> ز</label>
+      <label><input type="checkbox" name="checklist" value="ح"> ح</label>
+      <label><input type="checkbox" name="checklist" value="ط"> ط</label>
+      <label><input type="checkbox" name="checklist" value="ی"> ی</label>
+    </div>
+
+    <div class="row">
+      <div class="input-with-label"><label for="technicianName">نام تکنیکل:</label><input type="text" id="technicianName" name="technicianName" required></div>
+    </div>
+
+    <div class="row">
+      <div class="readonly-label">خدمات مشترکین 24/7</div>
+      <div class="readonly-label">0797962962 / 0786962962</div>
+      <div class="readonly-label">زنگ</div>
+    </div>
+
+    <button type="submit" id="submitBtn">ارسال</button>
+  </form>
+
+  <div id="statusBar" style="margin-top:15px; font-weight:bold;"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
