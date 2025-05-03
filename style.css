@@ -100,8 +100,8 @@ textarea {
 
 .checkboxes {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px 10px;
 }
 
 .checkboxes label {
